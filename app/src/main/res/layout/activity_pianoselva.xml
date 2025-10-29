@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pianoselva">
+
+
+    <LinearLayout
+        android:id="@+id/pianoContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#1A1A1A"
+        android:clipToPadding="false"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <!-- Tecla DO (C) -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btncow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/tecla_blanca"
+            android:elevation="4dp"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="24dp"
+            android:text="vaca"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Tecla RE (D) -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btndog"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/tecla_blanca"
+            android:elevation="4dp"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="24dp"
+            android:text="perro"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Tecla MI (E) -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btncat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/tecla_blanca"
+            android:elevation="4dp"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="24dp"
+            android:text="gato"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Tecla FA (F) -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnhorse"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/tecla_blanca"
+            android:elevation="4dp"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="24dp"
+            android:text="Caba"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Tecla SOL (G) -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnduck"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/tecla_blanca"
+            android:elevation="4dp"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="24dp"
+            android:text="duck"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Tecla LA (A) -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnhen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/tecla_blanca"
+            android:elevation="4dp"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="24dp"
+            android:text="gallina"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Tecla SI (B) -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnpig"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/tecla_blanca"
+            android:elevation="4dp"
+            android:gravity="bottom|center_horizontal"
+            android:paddingBottom="24dp"
+            android:text="cer"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

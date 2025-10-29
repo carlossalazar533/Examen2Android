@@ -1,0 +1,17 @@
+<resources>
+  <string name="app_name">PianoGrupo#03</string>
+  <string name="piano">Piano</string>
+  <string name="intrumentos">Intrumentos</string>
+  <string name="animales">Animales</string>
+  <string name="piano_virtual">Piano Virtual</string>
+  <string name="toca_una_tecla">Toca una tecla</string>
+  <string name="nota_do">DO</string>
+  <string name="nota_re">RE</string>
+  <string name="nota_mi">MI</string>
+  <string name="nota_fa">FA</string>
+  <string name="nota_sol">SOL</string>
+  <string name="nota_la">LA</string>
+  <string name="nota_si">SI</string>
+    <string name="grupo">Desarroladores</string>
+  <string name="salir">Salir</string>
+</resources>
