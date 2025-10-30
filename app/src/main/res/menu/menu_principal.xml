@@ -19,12 +19,12 @@
       android:orderInCategory="3"/>
   <item android:id="@+id/grupo"
       android:title="@string/grupo"
-      android:icon="@drawable/ico_animal"
+      android:icon="@drawable/aboutus"
       app:showAsAction="ifRoom"
       android:orderInCategory="3"/>
   <item android:id="@+id/salir"
       android:title="@string/salir"
-      android:icon="@drawable/ico_animal"
+      android:icon="@drawable/salir"
       app:showAsAction="ifRoom"
       android:orderInCategory="3"/>
 </menu>

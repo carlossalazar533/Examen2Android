@@ -4,13 +4,11 @@ plugins {
 
 android {
     namespace 'sv.edu.itca.mp_piano'
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk 36
 
     defaultConfig {
         applicationId "sv.edu.itca.mp_piano"
-        minSdk 35
+        minSdk 34
         targetSdk 36
         versionCode 1
         versionName "1.0"

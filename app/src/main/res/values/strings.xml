@@ -14,4 +14,14 @@
   <string name="nota_si">SI</string>
     <string name="grupo">Desarroladores</string>
   <string name="salir">Salir</string>
+    <string name="team">Team</string>
+  <string name="foto_enox">Foto Enox</string>
+  <string name="brandon_enox_valdez_linares">Brandon Enox Valdez Linares</string>
+  <string name="todo">TODO</string>
+  <string name="mauricio_alexander_perez_dominguez">Mauricio Alexander Perez Dominguez</string>
+  <string name="foto_geo">Foto Geo</string>
+  <string name="foto_mauricio">Foto Mauricio</string>
+  <string name="carlos_geovanni_salazar_monterroza">Carlos Geovanni Salazar Monterroza</string>
+  <string name="rodrigo_jose_claros_sola">Rodrigo Jose Claros Sola</string>
+  <string name="foto_rodri">Foto Rodri</string>
 </resources>

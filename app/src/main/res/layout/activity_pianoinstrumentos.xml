@@ -1,149 +1,255 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/pianoInstrumentosRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pianoinstrumentos">
+    android:background="@color/black">
 
     <LinearLayout
         android:id="@+id/pianoContainer"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="#1A1A1A"
-        android:clipToPadding="false"
-        android:elevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:padding="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="bottom"
+        android:padding="4dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Tecla DO (C) -->
-        <androidx.appcompat.widget.AppCompatButton
+        <!-- GUITARRA -->
+        <LinearLayout
             android:id="@+id/btnGuitar"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
             android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
             android:background="@drawable/tecla_blanca"
-            android:elevation="4dp"
-            android:gravity="bottom|center_horizontal"
-            android:paddingBottom="24dp"
-            android:text="guitarra"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"
+            android:layout_margin="2dp">
 
-        <!-- Tecla RE (D) -->
-        <androidx.appcompat.widget.AppCompatButton
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/guitarra"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Guitarra"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="2dp"/>
+        </LinearLayout>
+
+        <!-- TAMBOR -->
+        <LinearLayout
             android:id="@+id/btntambor"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
             android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
             android:background="@drawable/tecla_blanca"
-            android:elevation="4dp"
-            android:gravity="bottom|center_horizontal"
-            android:paddingBottom="24dp"
-            android:text="tambor"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"
+            android:layout_margin="2dp">
 
-        <!-- Tecla MI (E) -->
-        <androidx.appcompat.widget.AppCompatButton
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/tambor"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tambor"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="2dp"/>
+        </LinearLayout>
+
+        <!-- VIOLIN -->
+        <LinearLayout
             android:id="@+id/btnviolin"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
             android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
             android:background="@drawable/tecla_blanca"
-            android:elevation="4dp"
-            android:gravity="bottom|center_horizontal"
-            android:paddingBottom="24dp"
-            android:text="violin"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"
+            android:layout_margin="2dp">
 
-        <!-- Tecla FA (F) -->
-        <androidx.appcompat.widget.AppCompatButton
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/violin"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Violin"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="2dp"/>
+        </LinearLayout>
+
+        <!-- TROMPETA -->
+        <LinearLayout
             android:id="@+id/btntompeta"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
             android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
             android:background="@drawable/tecla_blanca"
-            android:elevation="4dp"
-            android:gravity="bottom|center_horizontal"
-            android:paddingBottom="24dp"
-            android:text="trompeta"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"
+            android:layout_margin="2dp">
 
-        <!-- Tecla SOL (G) -->
-        <androidx.appcompat.widget.AppCompatButton
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/trompeta"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Trompeta"
+                android:textColor="#000"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="2dp"/>
+        </LinearLayout>
+
+        <!-- FLAUTA -->
+        <LinearLayout
             android:id="@+id/btnflauta"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
             android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
             android:background="@drawable/tecla_blanca"
-            android:elevation="4dp"
-            android:gravity="bottom|center_horizontal"
-            android:paddingBottom="24dp"
-            android:text="flauta"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"
+            android:layout_margin="2dp">
 
-        <!-- Tecla LA (A) -->
-        <androidx.appcompat.widget.AppCompatButton
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/flauta"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Flauta"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="2dp"/>
+        </LinearLayout>
+
+        <!-- ARMONICA -->
+        <LinearLayout
             android:id="@+id/btnArmonica"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
             android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
             android:background="@drawable/tecla_blanca"
-            android:elevation="4dp"
-            android:gravity="bottom|center_horizontal"
-            android:paddingBottom="24dp"
-            android:text="Armonica"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"
+            android:layout_margin="2dp">
 
-        <!-- Tecla SI (B) -->
-        <androidx.appcompat.widget.AppCompatButton
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/armonica"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Armonica"
+                android:textColor="#000"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="2dp"/>
+        </LinearLayout>
+
+        <!-- ARPA -->
+        <LinearLayout
             android:id="@+id/btnharp"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
             android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
             android:background="@drawable/tecla_blanca"
-            android:elevation="4dp"
-            android:gravity="bottom|center_horizontal"
-            android:paddingBottom="24dp"
-            android:text="arpa"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"
+            android:layout_margin="2dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/arpa"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Arpa"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="2dp"/>
+        </LinearLayout>
 
     </LinearLayout>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
