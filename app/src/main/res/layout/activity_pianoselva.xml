@@ -1,147 +1,240 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".pianoselva">
-
+    android:background="@drawable/fondoselva">
 
     <LinearLayout
         android:id="@+id/pianoContainer"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="#1A1A1A"
-        android:clipToPadding="false"
-        android:elevation="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:padding="12dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center_vertical"
+        android:padding="4dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Tecla DO (C) -->
-        <androidx.appcompat.widget.AppCompatButton
+        <!-- VACA -->
+        <FrameLayout
             android:id="@+id/btncow"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
             android:layout_weight="1"
+            android:layout_margin="2dp"
             android:background="@drawable/tecla_blanca"
-            android:elevation="4dp"
-            android:gravity="bottom|center_horizontal"
-            android:paddingBottom="24dp"
-            android:text="vaca"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:clickable="true"
+            android:focusable="true">
 
-        <!-- Tecla RE (D) -->
-        <androidx.appcompat.widget.AppCompatButton
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/vaca"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vaca"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#66000000"
+                android:padding="2dp"
+                android:layout_gravity="bottom"/>
+        </FrameLayout>
+
+        <!-- PERRO -->
+        <FrameLayout
             android:id="@+id/btndog"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
             android:layout_weight="1"
+            android:layout_margin="2dp"
             android:background="@drawable/tecla_blanca"
-            android:elevation="4dp"
-            android:gravity="bottom|center_horizontal"
-            android:paddingBottom="24dp"
-            android:text="perro"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:clickable="true"
+            android:focusable="true">
 
-        <!-- Tecla MI (E) -->
-        <androidx.appcompat.widget.AppCompatButton
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/perro"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Perro"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#66000000"
+                android:padding="2dp"
+                android:layout_gravity="bottom"/>
+        </FrameLayout>
+
+        <!-- GATO -->
+        <FrameLayout
             android:id="@+id/btncat"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
             android:layout_weight="1"
+            android:layout_margin="2dp"
             android:background="@drawable/tecla_blanca"
-            android:elevation="4dp"
-            android:gravity="bottom|center_horizontal"
-            android:paddingBottom="24dp"
-            android:text="gato"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:clickable="true"
+            android:focusable="true">
 
-        <!-- Tecla FA (F) -->
-        <androidx.appcompat.widget.AppCompatButton
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/gato"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gato"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#66000000"
+                android:padding="2dp"
+                android:layout_gravity="bottom"/>
+        </FrameLayout>
+
+        <!-- CABALLO -->
+        <FrameLayout
             android:id="@+id/btnhorse"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
             android:layout_weight="1"
+            android:layout_margin="2dp"
             android:background="@drawable/tecla_blanca"
-            android:elevation="4dp"
-            android:gravity="bottom|center_horizontal"
-            android:paddingBottom="24dp"
-            android:text="Caba"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:clickable="true"
+            android:focusable="true">
 
-        <!-- Tecla SOL (G) -->
-        <androidx.appcompat.widget.AppCompatButton
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/caballo"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="caballo"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#66000000"
+                android:padding="2dp"
+                android:layout_gravity="bottom"/>
+        </FrameLayout>
+
+        <!-- PATO -->
+        <FrameLayout
             android:id="@+id/btnduck"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
             android:layout_weight="1"
+            android:layout_margin="2dp"
             android:background="@drawable/tecla_blanca"
-            android:elevation="4dp"
-            android:gravity="bottom|center_horizontal"
-            android:paddingBottom="24dp"
-            android:text="duck"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:clickable="true"
+            android:focusable="true">
 
-        <!-- Tecla LA (A) -->
-        <androidx.appcompat.widget.AppCompatButton
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/pato"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pato"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#66000000"
+                android:padding="2dp"
+                android:layout_gravity="bottom"/>
+        </FrameLayout>
+
+        <!-- GALLINA -->
+        <FrameLayout
             android:id="@+id/btnhen"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
             android:layout_weight="1"
+            android:layout_margin="2dp"
             android:background="@drawable/tecla_blanca"
-            android:elevation="4dp"
-            android:gravity="bottom|center_horizontal"
-            android:paddingBottom="24dp"
-            android:text="gallina"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:clickable="true"
+            android:focusable="true">
 
-        <!-- Tecla SI (B) -->
-        <androidx.appcompat.widget.AppCompatButton
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/gallina"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gallina"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#66000000"
+                android:padding="2dp"
+                android:layout_gravity="bottom"/>
+        </FrameLayout>
+
+        <!-- CERDO -->
+        <FrameLayout
             android:id="@+id/btnpig"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginStart="2dp"
-            android:layout_marginEnd="2dp"
             android:layout_weight="1"
+            android:layout_margin="2dp"
             android:background="@drawable/tecla_blanca"
-            android:elevation="4dp"
-            android:gravity="bottom|center_horizontal"
-            android:paddingBottom="24dp"
-            android:text="cer"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/cerdo"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cerdo"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#66000000"
+                android:padding="2dp"
+                android:layout_gravity="bottom"/>
+        </FrameLayout>
 
     </LinearLayout>
 

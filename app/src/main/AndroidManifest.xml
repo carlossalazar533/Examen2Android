@@ -16,9 +16,11 @@
             android:exported="false" />
         <activity
             android:name=".pianoinstrumentos"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".pianoselva"
+            android:screenOrientation="landscape"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
